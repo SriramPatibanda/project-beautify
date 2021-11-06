@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myapp/views/beautify/beautify_page.dart';
 import 'package:myapp/views/home/home_controller.dart';
 import 'package:myapp/views/home/landing_page.dart';
 import 'package:myapp/views/home/widgets/custom_appbar.dart';
@@ -10,9 +11,7 @@ class HomePage extends GetView<HomeController> {
 
   final List<Widget> _widgetOptions = <Widget>[
     const LandingPage(),
-    const Text(
-      'Index 1: Business',
-    ),
+    BeautifyPage(),
   ];
   @override
   Widget build(BuildContext context) {

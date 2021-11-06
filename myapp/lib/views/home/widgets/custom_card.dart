@@ -14,9 +14,7 @@ class CustomCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Card(
-          semanticContainer: true,
           clipBehavior: Clip.antiAliasWithSaveLayer,
-          borderOnForeground: false,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(15.0)),
           ),
@@ -25,10 +23,10 @@ class CustomCard extends StatelessWidget {
             imageURL,
             fit: BoxFit.fill,
             width: 170,
-            height: 200,
+            height: 180,
           ),
         ),
-        const SizedBox(height: 10.0),
+        const SizedBox(height: 20.0),
         Padding(
           padding: const EdgeInsets.only(left: 5.0),
           child: Text(
