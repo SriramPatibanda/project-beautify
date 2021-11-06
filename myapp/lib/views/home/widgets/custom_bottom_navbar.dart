@@ -9,13 +9,15 @@ class CustomBottomNavBar extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      currentIndex: controller.bottomNavBarIndex.value,
-      onTap: controller.onItemTapped,
-      items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Beautify'),
-      ],
+    return Obx(
+      () => BottomNavigationBar(
+        currentIndex: controller.bottomNavBarIndex.value,
+        onTap: controller.onItemTapped,
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Beautify'),
+        ],
+      ),
     );
   }
 }

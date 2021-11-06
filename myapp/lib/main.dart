@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
       ),
       initialBinding: HomeBinding(),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
