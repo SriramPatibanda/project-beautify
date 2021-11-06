@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomCard extends StatelessWidget {
+  final String imageURL;
   const CustomCard({
     Key? key,
+    required this.imageURL,
   }) : super(key: key);
 
   @override
@@ -20,8 +22,8 @@ class CustomCard extends StatelessWidget {
           ),
           elevation: 10.0,
           child: Image.network(
-            'https://cdn.shopify.com/s/files/1/0984/4522/products/Tcp-Joke-Do-You-Get-It-T-Shirt-5_large.jpg?v=1579320564',
-            fit: BoxFit.fitHeight,
+            imageURL,
+            fit: BoxFit.fill,
             width: 170,
             height: 200,
           ),
