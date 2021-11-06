@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:myapp/views/home/home_controller.dart';
 
@@ -15,7 +16,8 @@ class CustomBottomNavBar extends GetView<HomeController> {
         onTap: controller.onItemTapped,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Beautify'),
+          BottomNavigationBarItem(
+              icon: FaIcon(FontAwesomeIcons.magic), label: 'Beautify'),
         ],
       ),
     );

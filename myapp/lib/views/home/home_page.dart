@@ -9,7 +9,7 @@ class HomePage extends GetView<HomeController> {
   HomePage({Key? key}) : super(key: key);
 
   final List<Widget> _widgetOptions = <Widget>[
-    LandingPage(),
+    const LandingPage(),
     const Text(
       'Index 1: Business',
     ),
