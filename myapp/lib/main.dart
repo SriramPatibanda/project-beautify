@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:myapp/utils/bindings.dart';
 import 'package:myapp/views/home/home_page.dart';
 
 void main() {
@@ -10,12 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Myntra HackerRamp',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
+      initialBinding: HomeBinding(),
       home: const HomePage(),
     );
   }
