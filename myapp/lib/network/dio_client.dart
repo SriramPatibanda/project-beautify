@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart' as dio;
+import 'package:flutter/foundation.dart';
 import 'package:myapp/env.dart';
 
 class DioClient {
@@ -10,8 +11,9 @@ class DioClient {
       'img': image,
       'type': type,
     });
-    final response = await client.post(baseUrl + 'api', data: formData);
 
+    final response = await client.post(baseUrl + 'api', data: formData);
+    debugPrint(response.data);
     return response.data!;
   }
 }

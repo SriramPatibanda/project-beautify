@@ -1,12 +1,11 @@
 import 'package:cloudinary_public/cloudinary_public.dart';
 import 'package:get/get.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:myapp/network/cloundinary.dart';
 import 'package:myapp/network/dio_client.dart';
 
 class BeautifyController extends GetxController {
-  final DioClient client = Get.find();
-  final Cloudinary cloudinary = Get.find();
+  final Cloudinary cloudinary = Get.find<Cloudinary>();
+  final DioClient client = Get.find<DioClient>();
 
   RxBool apiResult = false.obs;
 
